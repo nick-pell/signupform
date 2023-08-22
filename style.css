@@ -1,4 +1,5 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans:wght@100&display=swap');
+*, body{
     padding: 0;
     margin: 0;
 }
@@ -23,6 +24,9 @@ body{
 .right-side{
     height: 100vh;
     width: 100%;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo-background{
@@ -51,5 +55,25 @@ body{
 .logo-background p{
     font-size: 30px;
     color:black;
+    font-family: 'Dancing Script',cursive,sans-serif;
 
+}
+
+.top-container{
+    height: 30%;
+    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content:flex-end;
+    font-family: 'Noto Sans',sans-serif;
+    font-size: 1.3rem;
+    font-weight: 900;
+    padding-left: 35px;
+    flex-wrap: wrap;
+}
+
+.top-container p {
+    max-width: 680px;
+    letter-spacing: .1em;
 }
