@@ -27,6 +27,9 @@
     background-color: lightgrey;
     display: flex;
     flex-direction: column;
+    font-family: 'Noto Sans',sans-serif;
+    font-size: 1.3rem;
+    font-weight: 900;
 }
 
 .logo-background{
@@ -66,14 +69,48 @@
     flex-direction: column;
     gap:20px;
     justify-content:flex-end;
-    font-family: 'Noto Sans',sans-serif;
-    font-size: 1.3rem;
-    font-weight: 900;
     padding-left: 35px;
     flex-wrap: wrap;
+    padding-bottom: 40px;
 }
 
 .top-container p {
     max-width: 680px;
     letter-spacing: .1em;
 }
+
+.sign-up{
+    padding-left: 35px;
+    display: flex;
+    background-color: white;
+    gap:50px;
+    height:300px;
+
+}
+
+
+
+label,input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.left-col,
+.right-col{
+    gap:20px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: .1em;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sign-up h1{
+    position: absolute;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
