@@ -24,7 +24,7 @@
 .right-side{
     height: 100vh;
     width: 100%;
-    background-color: lightgrey;
+    background-color: rgb(230, 227, 227);
     display: flex;
     flex-direction: column;
     font-family: 'Noto Sans',sans-serif;
@@ -64,7 +64,7 @@
 
 .top-container{
     height: 30%;
-    border:1px solid black;
+
     display: flex;
     flex-direction: column;
     gap:20px;
@@ -85,6 +85,7 @@
     background-color: white;
     gap:50px;
     height:300px;
+    box-shadow: 10px 5px 5px rgb(139, 139, 139);
 
 }
 
@@ -93,13 +94,20 @@
 label,input{
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+
+}
+
+input{
+    border-radius: 5px ;
+    height: 20px;
+    width: 250px;
+    border: 1px solid grey;
+    margin-bottom: 15px;
 }
 
 .left-col,
 .right-col{
-    gap:20px;
-    font-size: 14px;
+    font-size: 12px;
     display: flex;
     flex-direction: column;
     letter-spacing: .1em;
@@ -114,3 +122,29 @@ label,input{
     font-size: 30px;
 }
 
+.bottom-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-left: 30px;
+    gap:20px;
+}
+
+.bottom-container p{
+    font-size: 16px;
+}
+
+.bottom-container a{
+    color:rgb(92, 166, 226);
+    text-decoration: none;
+}
+
+.create-account-button{
+    height: 45px;
+    width: 200px;
+    background-color: rgb(92, 166, 226);
+    color:white;
+    font-size: 18px;
+    border-radius: 5px;
+    border:0;
+}
