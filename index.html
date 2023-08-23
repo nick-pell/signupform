@@ -14,7 +14,7 @@
             <img src="images\ocean.jpg" alt="picture of ocean" />
             <div class="logo-background">
                 <img src="images\shell.avif">
-                <p>S e a S h e l l</p>
+                <p>P l a c e H o l d e r</p>
         </div>
         </div>
 
@@ -27,30 +27,31 @@
             <div class="sign-up">
                 <h1>Let's do this!</h1>
                 <div class="left-col">
-                    <form action="#" method="post">
-                        <label for="first_name">FIRST NAME</label>
-                        <input type="text" id="first_name">
+                    <div id="error"></div>
+                    <form id="form" action="/" method="get">
+                        <label for="first_name">*FIRST NAME</label>
+                        <input type="text" id="first_name" placeholder="John" required>
 
-                        <label for="last_name">LAST NAME</label>
-                        <input type="text" id="last_name">
+                        <label for="email">*EMAIL</label>
+                        <input type="email" id="email" placeholder="johndoe@example.com" required>
 
-                        <label for="password">PASSWORD</label>
-                        <input type="password" id="password">
-                    </form>
+                        <label for="password">*PASSWORD</label>
+                        <input type="password" id="password" placeholder="********" required>
+                    
                     </div>
 
                     <div class="right-col">
                         
-                        <form action="#" method="post">
-                            <label for="last_name">LAST NAME</label>
-                            <input type="text" id="last_name">
+                        
+                            <label for="last_name">*LAST NAME</label>
+                            <input type="text" id="last_name" placeholder="Doe" required>
     
-                            <label for="phone_numer">PHONE NUMBER</label>
-                            <input type="tel" id="phone_number">
+                            <label for="phone_numer">*PHONE NUMBER</label>
+                            <input type="tel" id="phone_number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
     
-                            <label for="confirm_password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm_password">
-                        </form>
+                            <label for="confirm_password">*CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm_password" placeholder="********" required>
+                        
 
                 </div>
 
@@ -58,10 +59,11 @@
 
             <div class="bottom-container">
 
-                <button class="create-account-button">Create Account</button>
+                <button type="submit" class="create-account-button">Create Account</button>
                 <p>Already have an account? <a href="index.html">Log in</a></p>
 
             </div>
+        </form>
 
         </div>
 

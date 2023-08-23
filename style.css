@@ -103,7 +103,15 @@ input{
     width: 250px;
     border: 1px solid grey;
     margin-bottom: 15px;
+    padding-left: 8px;
+
 }
+
+
+::placeholder{
+    opacity: 0.7;
+}
+
 
 .left-col,
 .right-col{
@@ -111,7 +119,6 @@ input{
     display: flex;
     flex-direction: column;
     letter-spacing: .1em;
-    align-items: center;
     justify-content: center;
 
 }
@@ -147,4 +154,18 @@ input{
     font-size: 18px;
     border-radius: 5px;
     border:0;
+    box-shadow: 1px 3px 10px rgb(139, 139, 139);
 }
+
+input:focus{
+    outline:none;
+    border:1px solid rgb(75, 132, 238);
+    box-shadow: 1px 1px black;
+}
+.create-account-button:hover{
+    border:2px solid rgb(75, 132, 238);
+}
+
+/* input:invalid:required{
+    border-color: red;
+} */
